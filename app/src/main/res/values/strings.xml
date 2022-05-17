@@ -1,0 +1,417 @@
+<resources>
+    <string name="app_name">Digital Bikes</string>
+    <!--buttons-->
+    <string name="digitaltimepacks">Digital Time Packs</string>
+    <string name="preferedlocation">Prefered Location</string>
+    <string name="back">Back</string>
+    <string name="muk">MUK</string>
+    <string name="ucu">UCU</string>
+    <string name="kya">KYA</string>
+    <string name="mubs">MUBS</string>
+    <string name="signup">SIGN UP</string>
+    <string name="hourglass">Hour Glass</string>
+    <string name="verify">Verify</string>
+    <string name="sharecodetoearn">Share app code to earn 20 minutes Free Digital Time</string>
+    <string name="sharecode">Share Code</string>
+    <string name="rentalagree">Rental Agreement</string>
+    <string name="byclick">By clicking Sign Up, you agree to this Rental Agreement and the Terms and Conditions of Digital Bikes</string>
+    <string name="timebucket">Time Bucket</string>
+    <string name="onehour">1:00 hr</string>
+    <string name="fullday">12:00 hrs</string>
+    <string name="clickToLogin">Click to login</string>
+    <string name="duration">Duration</string>
+    <string name="fine">Fine</string>
+    <string name="clearfine">Clear Fine</string>
+    <string name="forgotpass">Forgot password!</string>
+    <string name="havefine">Dear user, you have a fine</string>
+    <string name="rentalagreement">Rental Agreement</string>
+    <string name="confirm">Confirm</string>
+    <string name="signout">Sign Out</string>
+    <string name="halfDay">Half Day(6Hrs)</string>
+    <string name="fullDay">Full Day(7am-7pm)</string>
+    <string name="login">Login</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="createAccount">Create Account Here</string>
+    <string name="ugandanShillings">UGX</string>
+    <string name="home">Home</string>
+    <string name="bikenumber">Bike Number</string>
+    <string name="agentcode">Agent Code</string>
+    <string name="paymentMethod">Payment Method</string>
+    <string name="more">More</string>
+    <string name="howManyHours">How many hours</string>
+    <string name="rentABike">Rent A Bike</string>
+    <string name="proceed">Proceed</string>
+    <string name="promotions">Promotions</string>
+    <string name="about">About Digital Bikes</string>
+    <string name="about1">About</string>
+    <string name="safetyTips">Safety Tips</string>
+    <string name="share">Share</string>
+    <string name="hrs">Hrs</string>
+    <string name="cash">Cash</string>
+    <string name="day">Day</string>
+    <string name="credit">Credit</string>
+    <string name="termsAndConditions">Terms And Conditions</string>
+    <string name="profile">Profile</string>
+    <string name="support">Support</string>
+    <string name="myhistory">My History</string>
+    <string name="parkingPoints">Parking Points</string>
+    <string name="events">Events</string>
+    <string name="goPremium">Go Premium</string>
+    <string name="instructions">Instructions</string>
+    <string name="callHelpLine">Call Help Line</string>
+    <string name="sendFeedback">Send Feedback</string>
+    <string name="hour">Hour</string>
+    <string name="submit">SUBMIT</string>
+    <string name="getInTouch">Get In Touch</string>
+    <string name="benefitsOfPremium">Benefits of going premium</string>
+    <string name="perMonth">100000 ugx per month</string>
+    <string name="per3Months">300000 ugx per 3 months</string>
+    <string name="perYear">1000000 ugx per year</string>
+    <string name="fname">First Name</string>
+    <string name="sname">Surname</string>
+    <string name="ratingandfeedback">Rating and Feedback</string>
+
+    <!--davie-->
+
+    <string name="select_location_notification">
+        Select your preferred bike lot
+    </string>
+    <string name="click_more_options">
+        Select a bike lot and tap on the pop-up to proceed.
+    </string>\
+
+    <!--for the notification-->
+    <string name="channel_name">Digital Bikes Channel</string>
+    <string name="channel_description">For digital bikes notifications</string>
+
+    <!--texts-->
+    <string name="loginToApp">Login To App</string>
+    <string name="email">Email</string>
+    <string name="accBalance">Account Balance</string>
+    <string name="phone">Phone</string>
+    <string name="phonenumber">Phone number</string>
+    <string name="confirmpassword">Confirm Password</string>
+    <string name="gender">Gender</string>
+    <string name="newToApp">New To App! Tap Here To Sign Up</string>
+    <string name="name">Name</string>
+    <string name="digitalBikes">Digital Bikes</string>
+    <string name="welcome">Welcome To Digital Bikes</string>
+    <string name="password">Password</string>
+    <string name="signUp">Sign Up</string>
+    <string name="title_activity_tabbed">tabbed</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="thankYou">Thank You For Using Digital Bikes</string>
+    <string name="currency">UGX</string>
+    <string name="price">Price</string>
+    <string name="howToLoadCredit">How To Load Credit</string>
+    <string name="comingSoon">Coming Soon</string>
+    <string name="crossCountryComingSoon">Cross Country Coming Soon</string>
+    <string name="digitalTime">Digital Time</string>
+    <string name="shareCodeToEarnDigitalTime">Share Code To Earn Digital Time</string>
+    <string name="howToEarnDigitalTime">How To Earn Digital Time</string>
+
+
+    <!--LONG texts-->
+
+    <string name="textForAbout">He who [a]dwells in the shelter of the Most High
+Will remain secure and rest in the shadow of the Almighty [whose power no enemy can withstand].
+2
+I will say of the Lord, “He is my refuge and my fortress,
+My God, in whom I trust [with great confidence, and on whom I rely]!”
+3
+For He will save you from the trap of the fowler,
+And from the deadly pestilence.
+4
+He will cover you and completely protect you with His pinions,
+And under His wings you will find refuge;
+His faithfulness is a shield and a wall.
+5
+You will not be afraid of the terror of night,
+Nor of the arrow that flies by day,
+6
+Nor of the pestilence that stalks in darkness,
+Nor of the destruction (sudden death) that lays waste at noon.
+7
+A thousand may fall at your side
+And ten thousand at your right hand,
+But danger will not come near you.
+8
+You will only [be a spectator as you] look on with your eyes
+And witness the [divine] repayment of the wicked [as you watch safely from the shelter of the Most High].
+9
+Because you have made the Lord, [who is] my refuge,
+Even the Most High, your dwelling place,
+10
+No evil will befall you,
+Nor will any plague come near your tent.
+11
+For He will command His angels in regard to you,
+To protect and defend and guard you in all your ways [of obedience and service].
+12
+They will lift you up in their hands,
+So that you do not [even] strike your foot against a stone.
+13
+You will tread upon the lion and cobra;
+The young lion and the serpent you will trample underfoot.
+14
+“Because he set his love on Me, therefore I will save him;
+I will set him [securely] on high, because he knows My name [he confidently trusts and relies on Me, knowing I will never abandon him, no, never].
+
+
+    </string>
+    <string name="instructionsforuse">
+    1. Use Digital Bikes app to get a bike near you.
+2. Ride Bike
+3. Park Bike at any Digital Bikes parking points.
+4. Please make sure you lock the bike.
+5. Return bike at any Digital Bikes parking points.
+
+</string>
+    <string name="textForSafetyTips">
+        Inspect, Then Ride
+The team works hard to maintain each bicycle but it’s important to ensure that tires are inflated and brakes operate correctly before you ride. Bike riders should also adjust their seat height accordingly.
+
+Limit your speed.
+Every rider should use a speed they can handle. No need to go fast.
+
+Brake Early and Gradually
+Always brake early and gradually – especially when going downhill.
+
+Use both brakes
+Bike riders should use both brakes at the same time.
+
+Follow Traffic Laws
+Yield to pedestrians, ride in the direction of traffic, use hand signals, keep left, and come to a complete stop at red lights and follow signs.
+
+Make sure motorists can see you
+Ride in a position where you can see and be seen, consider wearing bright or reflective clothing Avoid riding in other vehicles’ blind spots.
+
+Use your bell - not all pedestrians can see you.
+
+Attention!
+Never cycle along the inside of large vehicles, such as lorries and buses, especially at junctions.
+Be mindful of large vehicles making wide turns.
+Be watchful of stones on the road.
+Do not use mobile devices to talk or text while riding.
+Never ride under the influence of drugs or alcohol.
+
+
+
+    </string>
+
+    <string name="earningProcess1">Share code with friends</string>
+    <string name="earningProcess2">Friends use code to join Digital Bikes</string>
+    <string name="earningProcess3">Hours are deposited to your account</string>
+
+    <string name="visitOurOffices">Visit our Offices</string>
+    <string name="ourOffices">Office 001 Kampala Road P. O. Box 416</string>
+    <string name="title_activity_rent_map1">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_rentingmap">Map</string>
+    <string name="title_activity_parking_points_map">Map</string>
+    <string name="title_activity_mapsimport1">Map</string>
+    <string name="bikereturn">Bike return</string>
+
+
+    <!--benrea strings-->
+
+    <string name="digital">Digital</string>
+    <string name="bikes">Bikes</string>
+    <string name="title_home">Home</string>
+    <string name="you_are_home">You are home!</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="rent_bike">Rent a Bike</string>
+    <string name="what_you_are_missing">What you\'re missing</string>
+    <string name="tutorials">Tutorials</string>
+    <string name="learn_more">Learn more</string>
+    <string name="search">Search</string>
+
+    <string name="safety_tips">Safety Tips</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_signup">Sign in</string>
+    <string name="create_account">Create your Account</string>
+    <string name="welcome_back">Welcome back</string>
+    <string name="just_a_few_details">Just a few details and we\'ll get you started</string>
+    <string name="login_to_continue">Please login to continue</string>
+    <string name="first_name">First Name</string>
+    <string name="surname">Surname</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="phone_number_sample">0754 123456</string>
+    <string name="residence">Residence</string>
+    <string name="sample_password">12345</string>
+    <string name="retype_password">Retype Password</string>
+    <string name="already_signed_up">Already signed up? Login here!</string>
+    <string name="create_new_account">Create a New account</string>
+    <string name="not_signed_up">Not Registered? Create new Account here!</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="log_in">LOG IN</string>
+    <string name="copyright">Copyright © Digital Bikes 2018</string>
+
+    <string name="where_are_you_going">Where are you going?</string>
+    <string name="address">Address</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="thanks">Thanks for using Digital Bikes</string>
+
+    <string name="log_out">Log out</string>
+
+    <string name="username">Username</string>
+
+    <string name="date">Date</string>
+    <string name="sample_date">21 July 2018</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="today">Today</string>
+    <string name="time">Time</string>
+
+    <string name="end_user_agreement">End User Agreement</string>
+    <string name="privacy_statement">Privacy Statement</string>
+    <string name="third_party_licences">Third Party Licenses</string>
+    <string name="version">Version</string>
+
+    <string name="faq">FAQ</string>
+    <string name="call_us">Call Us</string>
+    <string name="how_to">How To</string>
+    <string name="email_us">Email Us</string>
+    <string name="my_profile">My Profile</string>
+    <string name="payment">Payment</string>
+    <string name="settings">Settings</string>
+    <string name="help">Help</string>
+    <string name="connect_to_the_internet">Please connect to the Internet</string>
+
+    <string name="sample_time">23:45</string>
+    <string name="time_till_promotion_closure">Time till promotion closure</string>
+    <string name="how_to_earn_digital_time">
+    How to earn digital time
+    \n\n•	Share code with friends
+    \n\n•	Let them use the code to join Digital Bikes
+    \n\n•	Hours are deposited to your account
+    </string>
+
+    <string name="accept_terms_and_conditions">
+        By clicking Signup, you agree to the Terms and Conditions of Digital Bikes</string>
+
+
+    <string name="safety_tips_text_1">
+        1. Inspect, Then Ride.
+        \n\nThe team works hard to maintain each bicycle but it’s important to ensure that tires are inflated and brakes operate correctly before you ride. Bike riders should also adjust their seat height accordingly
+    </string>
+    <string name="safety_tips_text_2">
+    2. Limit your speed.
+    \n\nEvery rider should use a speed they can handle. No need to go fast.
+    </string>
+    <string name="safety_tips_text_3">
+    3. Brake early and gradually
+    \n\nAlways brake early and gradually especially when going downhill.
+    </string>
+    <string name="safety_tips_text_4">
+    4. Use both Brakes
+    \n\nBike riders should use both brakes at the same time. This helps avoid crashing towards one side.
+    </string>
+    <string name="safety_tips_text_5">
+    5. Follow Traffic Laws
+    \n\nYield to pedestrians, ride in the direction of traffic, use hand signals, keep left, and come to a complete stop at red lights and follow signs.
+    </string>
+    <string name="safety_tips_text_6">
+    6. Make sure motorists can see you
+    \n\nRide in a position where you can see and be seen, consider wearing bright or reflective clothing Avoid riding in other vehicles’ blind spots.
+    </string>
+    <string name="safety_tips_text_7">
+    7. Use your bell
+    \n\nNot all pedestrians can see you. Atleast, let them hear you.
+    </string>
+    <string name="safety_tips_text_at">
+        Attention!
+    </string>
+    <string name="safety_tips_text_8">
+    8. Stay Alert on the road.
+    </string>
+    <string name="safety_tips_text_9">
+        9. Never cycle along the inside of large vehicles, such as lorries and buses, especially at junctions.</string>
+    <string name="safety_tips_text_10">
+    10. Be mindful of large vehicles making wide turns.
+    </string>
+    <string name="safety_tips_text_11">
+    11. Do not use mobile devices to talk or text while riding.
+    </string>
+    <string name="safety_tips_text_12">
+    12. Be watchful of stones on the road.
+    </string>
+    <string name="safety_tips_text_13">
+    13. Never ride under the influence of drugs or alcohol.
+    </string>
+
+    <string name="about_text">
+        A BēnreaArt Concept Design
+        \nBbengo Reagan  .  Scream Studios
+    </string>
+
+
+    <!--INDSTRYCTIONS-->
+
+
+    <string name="inst_text_1">
+       1. Use Digital Bikes app to get a bike near you.
+        </string>
+    <string name="inst_text_2">
+    2. Approach any Digital Bikes agent near you and rent a bike of your choice.
+    </string>
+    <string name="inst_text_3">
+        3. Ride Bike
+    </string>
+    <string name="inst_text_4">
+    4. Park Bike at any Digital Bikes parking points.
+    </string>
+    <string name="inst_text_5">
+    5. Please make sure you lock the bike.
+    </string>
+    <string name="inst_text_6">
+   6. Return bike at any Digital Bikes agent at parking points.
+    </string>
+    <string name="proceed_to_pickup">Proceed to Pickup</string>
+    <string name="half_day">Half Day (6 hours)</string>
+    <string name="full_day">Full Day (7am - 7pm)</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="digital_time">Digital Time</string>
+
+    <string name="pickup_location">Bike pickup location</string>
+    <string name="finish">Finish</string>
+    <string name="go">GO</string>
+    <string name="your_ride_details">Your Ride Details</string>
+    <string name="sample_amount">2,500</string>
+    <string name="sample_pickup">Pickup from Mapeera Building</string>
+    <string name="dot">.</string>
+    <string name="sample_day">Today</string>
+    <string name="sample_duration">Full Day</string>
+    <string name="ugx">UGX</string>
+
+    <string name="quick_before_you_continue">Quick before you proceed</string>
+    <string name="plagiarism_text">
+        Please don\'t attempt \nto copy and use any part of this \nMobile Application or Software without prior
+        \npermission from the Developer \n\nThank you
+    </string>
+    <string name="benreaart_copyright">Copyright © 2018 iScream Studios. \nA BēnreaArt Company</string>
+
+    <string name="kampala">Kampala</string>
+    <string name="makerere">Makerere</string>
+    <string name="kololo">Kololo</string>
+    <string name="mylink"><a href="https://play.google.com/store/apps/details?id=com.stardigitalbikes.digitalbikes">Follow the link to download digital bikes and to earn 20 minutes free Digital time input code: </a></string>
+</resources>

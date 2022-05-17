@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+        <color name="colorPrimary1">#3F51B5</color>
+        <color name="colorPrimaryDark1">#303F9F</color>
+        <color name="colorAccent1">#FF4081</color>
+
+
+        <color name="darkTurq">#235D69</color>
+        <color name="darkdarkTurq">#1A454E</color>
+        <color name="lightTurq">#2B7483</color>
+        <color name="cyan">#00ffff</color>
+        <color name="cyand">#00c3ff</color>
+        <color name="orange">#ec7e29</color>
+        <color name="green">#1abc9c</color>
+        <color name="limelemon">#bfff00</color>
+        <color name="limeyellow">#ccff00</color>
+        <color name="turqlit">#4d7e96</color>
+        <color name="grey">#c9c9c9</color>
+        <color name="red">#ca0205</color>
+        <color name="redpocket">#ee4458</color>
+        <color name="yellow">#F8E71C</color>
+
+        <integer-array name="dbcolors">
+            <item>@color/cyan</item>
+            <item>@color/pocket_color_3</item>
+            <item>@color/orange</item>
+            <item>@color/holo_red_dark</item>
+            <item>@color/limeyellow</item>
+        </integer-array>
+
+        <color name="colorAccentCustom">#00c3ff</color>
+        <color name="white">#ffffff</color>
+        <color name="black">#000</color>
+
+        <color name="colorPrimary">#fff</color>
+        <color name="colorPrimaryDark">#5fff</color>
+        <color name="colorAccent">#fff</color>
+        <color name="colorLighter">#f2f2f2</color>
+        <color name="colorWhite">#fff</color>
+        <color name="colorWhiteTransparent">#e2f2f2f2</color>
+        <color name="colorBlack">#000</color>
+        <color name="colorAppBlue">#00003d</color>
+        <color name="colorAppBlueDarker">#000029</color>
+        <color name="colorAppOrange">#ce6000</color>
+        <color name="colorAppRed">#ca0205</color>
+        <color name="colorAppLightBlue">#40acff</color>
+        <color name="colorAppGreen">#0ba300</color>
+        <color name="colorAppBlueFaded">#8200003d</color>
+        <color name="colorAppBlueMoreFaded">#5d00003d</color>
+        <color name="colorAppBlueMuchMoreFaded">#3000143d</color>
+        <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+
+
+        <integer-array name="colors">
+            <item>@color/holo_blue_dark</item>
+            <item>@color/holo_yellow_dark</item>
+            <item>@color/holo_green_dark</item>
+            <item>@color/holo_purple_dark</item>
+            <item>@color/holo_red_dark</item>
+        </integer-array>
+
+        <integer-array name="active">
+            <item>@color/cyan</item>
+            <item>@color/cyan</item>
+            <item>@color/cyan</item>
+            <item>@color/cyan</item>
+            <item>@color/cyan</item>
+            <item>@color/cyan</item>
+        </integer-array>
+
+        <integer-array name="inactive">
+            <item>@color/grey</item>
+            <item>@color/grey</item>
+            <item>@color/grey</item>
+            <item>@color/grey</item>
+            <item>@color/grey</item>
+            <item>@color/grey</item>
+        </integer-array>
+
+
+        <integer-array name="gplus_colors">
+            <item>@color/gplus_color_1</item>
+            <item>@color/gplus_color_2</item>
+            <item>@color/gplus_color_3</item>
+            <item>@color/gplus_color_4</item>
+        </integer-array>
+
+        <integer-array name="pocket_bar_colors">
+            <item>@color/pocket_color_1</item>
+            <item>@color/pocket_color_1</item>
+            <item>@color/pocket_color_1</item>
+            <item>@color/pocket_color_1</item>
+            <item>@color/pocket_color_2</item>
+            <item>@color/pocket_color_2</item>
+            <item>@color/pocket_color_2</item>
+            <item>@color/pocket_color_2</item>
+            <item>@color/pocket_color_3</item>
+            <item>@color/pocket_color_3</item>
+            <item>@color/pocket_color_3</item>
+            <item>@color/pocket_color_3</item>
+            <item>@color/pocket_color_4</item>
+            <item>@color/pocket_color_4</item>
+            <item>@color/pocket_color_4</item>
+            <item>@color/pocket_color_4</item>
+        </integer-array>
+
+        <integer-array name="dbcolorspock">
+            <item>@color/pocket_color_3</item>
+            <item>@color/cyan</item>
+            <item>@color/pocket_color_1</item>
+        </integer-array>
+        <integer-array name="dbcolorspocker">
+            <item>@color/pocket_color_3</item>
+            <item>@color/cyan</item>
+            <item>@color/orange</item>
+            <item>@color/pocket_color_1</item>
+        </integer-array>
+        <integer-array name="pocket_background_colors">
+            <item>@color/pocket_color_1</item>
+            <item>@color/pocket_color_2</item>
+            <item>@color/pocket_color_3</item>
+            <item>@color/pocket_color_4</item>
+        </integer-array>
+
+        <color name="pocket_color_1">#85edb9</color>
+        <color name="pocket_color_2">#34bdb7</color>
+        <color name="pocket_color_3">#ee4458</color>
+        <color name="pocket_color_4">#fcb74d</color>
+
+        <color name="gplus_color_1">#3e802f</color>
+        <color name="gplus_color_2">#f4b400</color>
+        <color name="gplus_color_3">#427fed</color>
+        <color name="gplus_color_4">#b23424</color>
+
+        <color name="holo_blue_dark">#0099cc</color>
+        <color name="holo_yellow_dark">#ff8800</color>
+        <color name="holo_green_dark">#669900</color>
+        <color name="holo_purple_dark">#9933cc</color>
+        <color name="holo_red_dark">#cc0000</color>
+
+
+</resources>

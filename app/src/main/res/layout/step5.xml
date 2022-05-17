@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="50dp"
+        android:padding="25dp"
+        android:src="@drawable/step5"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Park bike"
+        android:textSize="35sp"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black"
+        android:layout_gravity="start"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lock bike around the yellow spot at any Digital Bikes docking station"
+        android:paddingLeft="15dp"
+        android:textSize="25sp"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

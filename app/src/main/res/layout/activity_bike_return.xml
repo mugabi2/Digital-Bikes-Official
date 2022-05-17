@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bikeReturn">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbarreturn"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="56dp"
+        android:text="Please select location of return"
+        android:textSize="11pt"
+        android:textColor="#00003a"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.014" />
+
+    <LinearLayout
+        android:layout_width="394dp"
+        android:layout_height="311dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#e0ffff"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.716"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.703">
+
+        <Button
+            android:id="@+id/bafrica"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="#edc9bb"
+            android:text="Africa"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="7pt" />
+
+        <Button
+            android:id="@+id/bcedat"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="#edc9bb"
+            android:text="CEDAT"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="7pt" />
+
+        <Button
+            android:id="@+id/bcomplex"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="#edc9bb"
+            android:text="Complex"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="7pt" />
+
+        <Button
+            android:id="@+id/bfema"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="#edc9bb"
+            android:text="FEMA"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="7pt" />
+
+        <Button
+            android:id="@+id/blibrary"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="#edc9bb"
+            android:text="Library"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="7pt" />
+
+        <Button
+            android:id="@+id/blivingstone"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="#edc9bb"
+            android:text="Livingstone"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="7pt" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.703">
+
+        <Button
+            android:id="@+id/blumumba"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="#edc9bb"
+            android:text="Lumumba"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="7pt" />
+
+        <Button
+            android:id="@+id/bmaingate"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="#edc9bb"
+            android:text="Main Gate"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="7pt" />
+
+        <Button
+            android:id="@+id/bmarystuart"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="#edc9bb"
+            android:text="Marystuart"
+            android:textColor="#ffffff"
+            android:textSize="7pt" />
+
+        <Button
+            android:id="@+id/bmitchell"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="#edc9bb"
+            android:text="Mitchell"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="7pt" />
+
+        <Button
+            android:id="@+id/bnkrumah"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="#edc9bb"
+            android:text="Nkrumah"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="7pt" />
+
+        <Button
+            android:id="@+id/buh"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="#edc9bb"
+            android:text="Univerity Hall"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="7pt" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/time2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="11pt"
+        android:textColor="#00003a"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <ProgressBar
+        android:id="@+id/progressBar5"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="126dp"
+        android:layout_height="107dp"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="false"
+        android:max="100"
+        android:progressDrawable="@drawable/circle"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.573" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

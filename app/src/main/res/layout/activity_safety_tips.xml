@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".safetyTips">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbarsafety"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearvvLayout10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearvvLayout6">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cavvrd3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                app:cardCornerRadius="7dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@color/orange"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="7dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="@string/safety_tips_text_1"
+                        android:textColor="@color/colorAppBlue"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="16sp"
+                        android:src="@drawable/ic_verified_user_black_24dp"
+                        app:tint="@drawable/blue_image" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/carvvvvv55d3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="7dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@color/orange"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="7dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="@string/safety_tips_text_2"
+                        android:textColor="@color/colorAppBlue"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="35dp"
+                        android:layout_marginBottom="16sp"
+                        android:src="@drawable/ic_motorcycle_black_24dp"
+                        app:tint="@drawable/blue_image" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/carkjghd3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/cavvvvvvvvvrd3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="7dp"
+                app:cardCornerRadius="7dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@color/orange"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="7dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="@string/safety_tips_text_3"
+                        android:textColor="@color/colorAppBlue"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="58dp"
+                        android:layout_height="35dp"
+                        android:layout_marginBottom="16sp"
+                        android:src="@drawable/ic_schedule_black_24dp"
+                        app:tint="@drawable/blue_image" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/casvvvvvvvvvvvvvvrd3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="7dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@color/orange"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="7dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="@string/safety_tips_text_4"
+                        android:textColor="@color/colorAppBlue"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="16sp"
+                        android:src="@drawable/ic_all_inclusive_black_24dp"
+                        app:tint="@drawable/blue_image" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/dfcvvvvvvvar55d3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="7dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@color/orange"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="7dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="@string/safety_tips_text_5"
+                        android:textColor="@color/colorAppBlue"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="16sp"
+                        android:src="@drawable/ic_remove_red_eye_black_24dp"
+                        app:tint="@drawable/blue_image" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cavrksvssjghd3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_alignStart="@+id/cvavvvvvvvvvrvd3"
+                android:layout_marginBottom="7dp"
+                app:cardCornerRadius="7dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@color/orange"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="7dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="@string/safety_tips_text_6"
+                        android:textColor="@color/colorAppBlue"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="35dp"
+                        android:layout_marginBottom="16sp"
+                        android:src="@drawable/ic_all_inclusive_black_24dp"
+                        app:tint="@drawable/blue_image" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cavvvvvdsd3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="7dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@color/orange"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="7dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="@string/safety_tips_text_7"
+                        android:textColor="@color/colorAppBlue"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="56dp"
+                        android:layout_height="32dp"
+                        android:layout_marginBottom="16sp"
+                        android:src="@drawable/ic_motorcycle_black_24dp"
+                        app:tint="@drawable/blue_image" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/casdvsavvar55d3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="7dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@color/orange"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="7dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="@string/safety_tips_text_at"
+                        android:textColor="@color/colorAppBlue"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cavvrkjgdsvvfsdhd3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/vcvvvvrdvv3v"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="7dp"
+                app:cardCornerRadius="7dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@color/orange"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="7dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="@string/safety_tips_text_8"
+                        android:textColor="@color/colorAppBlue"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="16sp"
+                        android:src="@drawable/ic_schedule_black_24dp"
+                        app:tint="@drawable/blue_image" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/caffvdfsvdrd3dfsvdrd3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="7dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@color/orange"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="7dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="@string/safety_tips_text_9"
+                        android:textColor="@color/colorAppBlue"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="16sp"
+                        android:src="@drawable/ic_verified_user_black_24dp"
+                        app:tint="@drawable/blue_image" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cavrksvssjghd3sdv55d3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="7dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@color/orange"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="7dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="@string/safety_tips_text_10"
+                        android:textColor="@color/colorAppBlue"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="16sp"
+                        android:src="@drawable/ic_motorcycle_black_24dp"
+                        app:tint="@drawable/blue_image" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cggarkjsdfdsfvvdghd3dghd3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_alignStart="@+id/cgddvvard3ard3"
+                android:layout_marginBottom="7dp"
+                app:cardCornerRadius="7dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@color/orange"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="7dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="@string/safety_tips_text_11"
+                        android:textColor="@color/colorAppBlue"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="16sp"
+                        android:src="@drawable/ic_motorcycle_black_24dp"
+                        app:tint="@drawable/blue_image" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/carfbvfsfdfsvvfdd3fdd3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="7dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@color/orange"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="7dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="@string/safety_tips_text_12"
+                        android:textColor="@color/colorAppBlue"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="16sp"
+                        android:src="@drawable/ic_schedule_black_24dp"
+                        app:tint="@drawable/blue_image" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cavrksvssjghd3sdv55d3rfsfdfvvdd3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="7dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@color/orange"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="7dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="@string/safety_tips_text_13"
+                        android:textColor="@color/colorAppBlue"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="16sp"
+                        app:tint="@drawable/blue_image" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

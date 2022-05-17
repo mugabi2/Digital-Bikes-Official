@@ -1,0 +1,188 @@
+{
+  "project_info": {
+    "project_number": "182704430023",
+    "firebase_url": "https://digital-bikes-cd6d9.firebaseio.com",
+    "project_id": "digital-bikes-cd6d9",
+    "storage_bucket": "digital-bikes-cd6d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182704430023:android:9867e7f753f1f405e7d7e2",
+        "android_client_info": {
+          "package_name": "com.example.samuelhimself.agent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "182704430023-l189a9ml7lilk1frf2lfmepe614e3dua.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.samuelhimself.agent",
+            "certificate_hash": "74d9790e9d0c01cf1d50936686c94740dbb8ebd7"
+          }
+        },
+        {
+          "client_id": "182704430023-u1h7cib26do4801ak19qrv66g40shtqh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdHaT0Ek0pLxtoH_w9A5L-2qRFMWvfoQs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "182704430023-u1h7cib26do4801ak19qrv66g40shtqh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182704430023:android:6b92cba3ca0d2375",
+        "android_client_info": {
+          "package_name": "com.example.samuelhimself.watcher"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "182704430023-bn2i8eetta3hoqjgmibi70k5lu6gel3j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.samuelhimself.watcher",
+            "certificate_hash": "74d9790e9d0c01cf1d50936686c94740dbb8ebd7"
+          }
+        },
+        {
+          "client_id": "182704430023-u1h7cib26do4801ak19qrv66g40shtqh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdHaT0Ek0pLxtoH_w9A5L-2qRFMWvfoQs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "182704430023-u1h7cib26do4801ak19qrv66g40shtqh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182704430023:android:20c28ae31416ab07e7d7e2",
+        "android_client_info": {
+          "package_name": "com.quizinfinity.digitalbikes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "182704430023-u1h7cib26do4801ak19qrv66g40shtqh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdHaT0Ek0pLxtoH_w9A5L-2qRFMWvfoQs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "182704430023-u1h7cib26do4801ak19qrv66g40shtqh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182704430023:android:8e3d4ceb7429a6dae7d7e2",
+        "android_client_info": {
+          "package_name": "com.stardigitalbikes.digitalbikes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "182704430023-l4d25qs9loks372ied9rjbn0b4t46cvc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.stardigitalbikes.digitalbikes",
+            "certificate_hash": "74d9790e9d0c01cf1d50936686c94740dbb8ebd7"
+          }
+        },
+        {
+          "client_id": "182704430023-u1h7cib26do4801ak19qrv66g40shtqh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdHaT0Ek0pLxtoH_w9A5L-2qRFMWvfoQs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "182704430023-u1h7cib26do4801ak19qrv66g40shtqh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182704430023:android:117390d7905c062b",
+        "android_client_info": {
+          "package_name": "com.stardigitalbikes.samuelhimself.bible1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "182704430023-rvua1hv0etvbgi8g8qkllgokahf9qgd7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.stardigitalbikes.samuelhimself.bible1",
+            "certificate_hash": "74d9790e9d0c01cf1d50936686c94740dbb8ebd7"
+          }
+        },
+        {
+          "client_id": "182704430023-u1h7cib26do4801ak19qrv66g40shtqh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdHaT0Ek0pLxtoH_w9A5L-2qRFMWvfoQs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "182704430023-u1h7cib26do4801ak19qrv66g40shtqh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

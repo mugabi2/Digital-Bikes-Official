@@ -23,7 +23,7 @@ import com.google.firebase.firestore.QuerySnapshot;
 
 public class splash extends AppCompatActivity {
     private FirebaseAuth mAuth;
-    String rent,email;
+    String rent,email,phone;
     private FirebaseFirestore db =FirebaseFirestore.getInstance();
     SharedPreferences sharedPreferences;
     private String prefName = "userDetails";
@@ -35,7 +35,7 @@ public class splash extends AppCompatActivity {
 // Initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance();
         sharedPreferences = this.getSharedPreferences(prefName, MODE_PRIVATE);
-        email=sharedPreferences.getString("email","");
+        phone=sharedPreferences.getString("phone_number","");
 
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -46,7 +46,7 @@ public class splash extends AppCompatActivity {
 
 //        GET USER DATA FROM FIREBASE
                     db.collection("mukusers")
-                            .whereEqualTo("email",email )
+                            .whereEqualTo("phone_number",phone )
                             .get()
                             .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                                 @Override

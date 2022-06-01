@@ -20,7 +20,8 @@ import android.widget.Toast;
 import com.google.android.material.card.MaterialCardView;
 
 public class support extends AppCompatActivity {
-    MaterialCardView call,rating,tac;
+    MaterialCardView call,rating;
+    TextView tac;
     TextView email;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +41,7 @@ public class support extends AppCompatActivity {
                 Log.d("DIAL","CLICKED CALLING-------------");
             }
         });
-        tac= findViewById(R.id.emailus);
+        tac= (TextView)findViewById(R.id.emailus);
         tac.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

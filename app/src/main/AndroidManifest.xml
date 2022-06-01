@@ -25,51 +25,34 @@
         -->
         <activity
             android:name=".maps"
+            android:screenOrientation="portrait"
             android:exported="true" >
         </activity>
 
         <activity
             android:name=".intro"
+            android:screenOrientation="portrait"
             android:exported="true" />
         <activity
             android:name=".support"
+            android:screenOrientation="portrait"
             android:exported="true" />
         <activity
             android:name=".otp"
+            android:screenOrientation="portrait"
             android:exported="true" />
         <activity
             android:name=".safetyTips"
+            android:screenOrientation="portrait"
             android:exported="true" />
         <activity
             android:name=".bikeReturn"
+            android:screenOrientation="portrait"
             android:exported="true" />
         <activity
             android:name=".registration"
-            android:exported="true" />
-        <activity
-            android:name=".profile"
-            android:exported="true" />
-        <activity
-            android:name=".passwordRecovery"
-            android:exported="true" />
-        <activity
-            android:name=".instructions"
-            android:exported="true" />
-        <activity
-            android:name=".frozenAccount"
-            android:exported="true" />
-        <activity
-            android:name=".fine"
-            android:exported="true" />
-        <activity
-            android:name=".finalRegistration"
-            android:exported="true" />
-        <activity
-            android:name=".login"
-            android:exported="true" ></activity>
-        <activity
-            android:name=".splash"
-            android:exported="true">
+            android:screenOrientation="portrait"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -77,7 +60,41 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".profile"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name=".passwordRecovery"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name=".instructions"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name=".frozenAccount"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name=".fine"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name=".finalRegistration"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name=".login"
+            android:screenOrientation="portrait"
+            android:exported="true" ></activity>
+        <activity
+            android:name=".splash"
+            android:screenOrientation="portrait"
+            android:exported="true">
+        </activity>
+        <activity
             android:name=".MainActivity"
+            android:screenOrientation="portrait"
             android:exported="true" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"

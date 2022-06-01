@@ -45,6 +45,7 @@
             android:layout_alignParentTop="true"
             android:background="#ffffff"
             android:gravity="center"
+            android:orientation="vertical"
             android:padding="7dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -58,7 +59,15 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:textColor="#00003a"
-                android:textSize="16pt" />
+                android:textSize="11pt" />
+            <TextView
+                android:id="@+id/textinemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#00003a"
+                android:textSize="8pt" />
 
         </LinearLayout>
         <!--PHONE-->
@@ -191,7 +200,7 @@
                         android:padding="7dp">
 
                         <TextView
-                            android:id="@+id/textdigitaltime2"
+                            android:id="@+id/textindt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="0dp"
@@ -289,6 +298,7 @@
             android:background="@drawable/roundlogbtn"
             android:padding="0dp"
             android:text="@string/signout"
+            android:onClick="signMeOut"
             android:textColor="@color/white"
             android:textSize="17sp"
             app:layout_constraintBottom_toBottomOf="parent"

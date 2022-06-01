@@ -65,11 +65,11 @@ public class login extends AppCompatActivity {
                 // Initialize Firebase Auth
                 mAuth = FirebaseAuth.getInstance();
 
-                String email = liemail.getText().toString().trim();
+                String phone = liemail.getText().toString().trim();
                 String password = lipassword.getText().toString().trim();
 //                Toast.makeText(getApplicationContext(), "push push", Toast.LENGTH_SHORT).show();
 
-                if (TextUtils.isEmpty(email)) {
+                if (TextUtils.isEmpty(phone)) {
                     Toast.makeText(getApplicationContext(), "Please enter email address!", Toast.LENGTH_SHORT).show();
                     return;
                 }
@@ -78,24 +78,24 @@ public class login extends AppCompatActivity {
                     return;
                 }
 //                progressBar.setVisibility(View.VISIBLE);
-                mAuth.signInWithEmailAndPassword(email, password)
-                        .addOnCompleteListener(login.this, new OnCompleteListener<AuthResult>() {
-                            @Override
-                            public void onComplete(@NonNull Task<AuthResult> task) {
-                                if (task.isSuccessful()) {
-                                    // Sign in success, update UI with the signed-in user's information
-                                    Log.d("lllll", "signInWithEmail:success");
-                                    FirebaseUser user = mAuth.getCurrentUser();
-                                    saveDetails(email);
-
-                                } else {
-                                    // If sign in fails, display a message to the user.
-                                    Log.w("TAG", "signInWithEmail:failure", task.getException());
-                                    Toast.makeText(login.this, "Authentication failed.",Toast.LENGTH_LONG).show();
-                                }
-                                progressBar.setVisibility(View.GONE);
-                            }
-                        });
+//                mAuth.signInWithEmailAndPassword(email, password)
+//                        .addOnCompleteListener(login.this, new OnCompleteListener<AuthResult>() {
+//                            @Override
+//                            public void onComplete(@NonNull Task<AuthResult> task) {
+//                                if (task.isSuccessful()) {
+//                                    // Sign in success, update UI with the signed-in user's information
+//                                    Log.d("lllll", "signInWithEmail:success");
+//                                    FirebaseUser user = mAuth.getCurrentUser();
+//                                    saveDetails(email);
+//
+//                                } else {
+//                                    // If sign in fails, display a message to the user.
+//                                    Log.w("TAG", "signInWithEmail:failure", task.getException());
+//                                    Toast.makeText(login.this, "Authentication failed.",Toast.LENGTH_LONG).show();
+//                                }
+//                                progressBar.setVisibility(View.GONE);
+//                            }
+//                        });
 
             }
         });
@@ -103,7 +103,7 @@ public class login extends AppCompatActivity {
     public void saveDetails(String email){
 //        GET USER DATA FROM FIREBASE
         db.collection("mukusers")
-                .whereEqualTo("email",email )
+                .whereEqualTo("phone_number",email )
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override

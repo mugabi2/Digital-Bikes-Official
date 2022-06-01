@@ -105,7 +105,7 @@ public class maps extends  AppCompatActivity implements OnMapReadyCallback, Goog
         setSupportActionBar(toolbar);
 
         Bundle extras=getIntent().getExtras();
-        rent=extras.getString("rent");
+//        rent=extras.getString("rent");
 
         myDialog = new Dialog(this);
         myDialog.setContentView(R.layout.rent_bike_popup);//rent_bike_popup

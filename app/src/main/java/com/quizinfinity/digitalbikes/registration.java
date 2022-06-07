@@ -127,7 +127,6 @@ public class registration extends AppCompatActivity{
 
     private FirebaseFirestore db =FirebaseFirestore.getInstance();
     private FirebaseAuth mAuth;
-    PhoneAuthCredential credential;
     String zero="0", phonel;
     private String prefName = "userDetails";
     SharedPreferences sharedPreferences;
@@ -137,6 +136,7 @@ public class registration extends AppCompatActivity{
     // variable for our text input
     // field for phone and OTP.
     private EditText edtPhone, edtOTP;
+    PhoneAuthCredential credential;
 
     // buttons for generating OTP and verifying OTP
     private Button verifyOTPBtn, generateOTPBtn;

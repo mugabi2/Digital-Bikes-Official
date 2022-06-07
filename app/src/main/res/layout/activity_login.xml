@@ -45,43 +45,44 @@
                 android:id="@+id/et_emailli"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/email"
+                android:hint="@string/phone_number"
                 android:inputType="text"
+                android:maxLength="9"
                 android:textSize="16sp"
                 app:theme="@style/EditTextStyle" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/login_psd_layout"
-            android:layout_height="60dp"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_marginTop="20dp"
-            android:layout_width="250dp">
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/login_psd_layout"-->
+<!--            android:layout_height="60dp"-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_width="250dp">-->
 
 
-            <EditText
-                android:hint="@string/password"
-                android:id="@+id/et_passwordli"
-                android:imeOptions="actionGo"
-                android:inputType="textPassword"
-                android:layout_height="wrap_content"
-                android:layout_width="match_parent"
-                android:textSize="18sp"
-                app:theme="@style/EditTextStyle"/>
+<!--&lt;!&ndash;            <EditText&ndash;&gt;-->
+<!--&lt;!&ndash;                android:hint="@string/password"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/et_passwordli"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:imeOptions="actionGo"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:inputType="textPassword"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textSize="18sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:theme="@style/EditTextStyle"/>&ndash;&gt;-->
 
-        </com.google.android.material.textfield.TextInputLayout>
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
 
 
 
-        <TextView
-            android:id="@+id/passwordreset1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/forgotpass"
-            android:layout_marginRight="25dp"
-            android:textSize="11dp"
-            android:layout_gravity="end"/>
+<!--        <TextView-->
+<!--            android:id="@+id/passwordreset1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/forgotpass"-->
+<!--            android:layout_marginRight="25dp"-->
+<!--            android:textSize="11dp"-->
+<!--            android:layout_gravity="end"/>-->
 
 
         <androidx.appcompat.widget.AppCompatButton

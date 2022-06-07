@@ -1,27 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:gravity="center"
     android:orientation="vertical"
-    android:background="@color/darkTurq">
+    android:background="@color/darkTurq"
+    android:gravity="center">
 
-    <ImageView
+
+<ImageView
         android:id="@+id/imageView"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="15dp"
         android:layout_gravity="center_horizontal"
         android:src="@drawable/splasho" />
-
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="15pt"
+    android:text="@string/editDetails"
+    android:gravity="center"
+    android:textColor="@color/white"/>
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="73dp"
         android:isScrollContainer="false">
 
         <LinearLayout
@@ -39,7 +44,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="5dp"
                 android:orientation="horizontal">
 
                 <EditText
@@ -73,37 +78,6 @@
 
             <!--android:drawableLeft="@drawable/phone_draw1"-->
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/box1"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="35dp"
-                    android:paddingLeft="4dp"
-                    android:text="+256"
-                    android:textSize="7pt" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="35dp"
-                    android:text="  "
-                    android:textSize="7pt" />
-
-                <EditText
-                    android:id="@+id/phonenum"
-                    android:layout_width="match_parent"
-                    android:layout_height="35dp"
-                    android:background="@drawable/box1"
-                    android:ems="10"
-                    android:hint="@string/phonenumber"
-                    android:inputType="phone"
-                    android:maxLength="9"
-                    android:textSize="7pt" />
-            </LinearLayout>
 
             <EditText
                 android:id="@+id/Eemail"
@@ -140,48 +114,6 @@
                 android:ems="10"
                 android:hint="Residence"
                 android:textSize="7pt" />
-
-<!--            <EditText-->
-<!--                android:id="@+id/pcodeif"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="35dp"-->
-<!--                android:layout_marginTop="10dp"-->
-<!--                android:background="@drawable/box1"-->
-<!--                android:drawableLeft="@drawable/ic_home2"-->
-<!--                android:ems="10"-->
-<!--                android:hint="Promo Code if any"-->
-<!--                android:textSize="7pt" />-->
-
-            <!--<TextView-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:text="    "-->
-            <!--android:textAllCaps="false"-->
-            <!--android:textSize="5pt" />-->
-
-            <!--<LinearLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:orientation="horizontal">-->
-
-            <!--<TextView-->
-            <!--android:id="@+id/spinner_textview1"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_gravity="center_vertical"-->
-            <!--android:paddingRight="7dp"-->
-            <!--android:text="Preferred Location"-->
-            <!--android:textColor="#ffffff"-->
-            <!--android:textSize="8pt" />-->
-
-            <!--<Spinner-->
-            <!--android:id="@+id/spinner"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:paddingLeft="5dp"-->
-            <!--android:textSize="8pt" />-->
-
-            <!--</LinearLayout>-->
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -227,35 +159,6 @@
 
             </LinearLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Please come with your University Identity Card to complete registration"
-                android:textColor="#ff0000"
-                android:textSize="7pt" />
-
-            <!--<LinearLayout-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:orientation="horizontal">-->
-
-            <!--<CheckBox-->
-            <!--android:id="@+id/check"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:text="" />-->
-
-            <!--<TextView-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:onClick="popme"-->
-            <!--android:paddingLeft="10dp"-->
-            <!--android:text="Terms and Conditions"-->
-            <!--android:textColor="@color/white"-->
-            <!--android:textSize="7pt" />-->
-
-            <!--</LinearLayout>-->
-
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/signup"
                 android:layout_width="300dp"
@@ -264,7 +167,7 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/box1"
                 android:onClick="popme"
-                android:text="@string/rentalagree"
+                android:text="@string/saveDetails"
                 android:textColor="@color/black" />
 
             <androidx.appcompat.widget.AppCompatButton
@@ -284,7 +187,7 @@
     </ScrollView>
 
     <fr.castorflex.android.circularprogressbar.CircularProgressBar
-        android:id="@+id/pogba5"
+        android:id="@+id/pogbaed"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
@@ -305,4 +208,4 @@
         app:layout_constraintVertical_bias="0.72" />
 
 
-</FrameLayout>
+</LinearLayout>

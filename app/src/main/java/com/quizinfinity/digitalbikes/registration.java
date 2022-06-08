@@ -229,7 +229,7 @@ public class registration extends AppCompatActivity{
 
         // initializing variables for button and Edittext.
         edtOTP = veryDialog.findViewById(R.id.idEdtOtp);
-        verifyOTPBtn = veryDialog.findViewById(R.id.verify);
+//        verifyOTPBtn = veryDialog.findViewById(R.id.verify);
 //        generateOTPBtn = findViewById(R.id.idBtnGetOtp);
 //
 //        // setting onclick listener for generate OTP button.
@@ -245,21 +245,21 @@ public class registration extends AppCompatActivity{
 
         // initializing on click listener
         // for verify otp button
-        verifyOTPBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // validating if the OTP text field is empty or not.
-                if (TextUtils.isEmpty(edtOTP.getText().toString())) {
-                    // if the OTP text field is empty display
-                    // a message to user to enter OTP
-                    Toast.makeText(registration.this, "Please enter OTP", Toast.LENGTH_SHORT).show();
-                } else {
-                    // if OTP field is not empty calling
-                    // method to verify the OTP.
-                    verifyCode(edtOTP.getText().toString());
-                }
-            }
-        });
+//        verifyOTPBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                // validating if the OTP text field is empty or not.
+//                if (TextUtils.isEmpty(edtOTP.getText().toString())) {
+//                    // if the OTP text field is empty display
+//                    // a message to user to enter OTP
+//                    Toast.makeText(registration.this, "Please enter OTP", Toast.LENGTH_SHORT).show();
+//                } else {
+//                    // if OTP field is not empty calling
+//                    // method to verify the OTP.
+//                    verifyCode(edtOTP.getText().toString());
+//                }
+//            }
+//        });
 //        *********very
     }
 
@@ -501,9 +501,6 @@ public class registration extends AppCompatActivity{
                         Log.w("luanda", "Error writing document", e);
                     }
                 });
-
-// Add a new document with a generated ID
-
     }
 
     public void logMeIn(View view){
@@ -549,7 +546,6 @@ public class registration extends AppCompatActivity{
     }
     // callback method is called on Phone auth provider.
     private PhoneAuthProvider.OnVerificationStateChangedCallbacks
-
             // initializing our callbacks for on
             // verification callback method.
             mCallBack = new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
@@ -597,7 +593,6 @@ public class registration extends AppCompatActivity{
             Toast.makeText(registration.this, e.getMessage(), Toast.LENGTH_LONG).show();
         }
     };
-
     // below method is use to verify code from Firebase.
     private void verifyCode(String code) {
         // below line is used for getting

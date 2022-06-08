@@ -1,41 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="400dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@color/darkTurq"
     android:gravity="center">
 
 
-<ImageView
+    <ImageView
         android:id="@+id/imageView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="15dp"
-        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_above="@+id/edittext"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:src="@drawable/splasho" />
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:textSize="15pt"
-    android:text="@string/editDetails"
-    android:gravity="center"
-    android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/editDetails"
+        android:gravity="center"
+        android:layout_above="@+id/scrollView2"
+        android:textColor="@color/white"
+        android:textSize="15pt" />
+
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:isScrollContainer="false">
+        android:layout_centerInParent="true"
+        android:isScrollContainer="true">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
             android:orientation="vertical"
             android:paddingLeft="20dp"
             android:paddingRight="20dp">
@@ -92,17 +99,6 @@
                 android:paddingLeft="5dp"
                 android:textSize="7pt" />
 
-            <EditText
-                android:id="@+id/Ppassword"
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/box1"
-                android:drawableLeft="@drawable/pass_draw1"
-                android:ems="10"
-                android:hint="@string/password"
-                android:inputType="textPassword"
-                android:textSize="7pt" />
 
             <EditText
                 android:id="@+id/resi"
@@ -115,71 +111,17 @@
                 android:hint="Residence"
                 android:textSize="7pt" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/gender_textview"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="23dp"
-                    android:paddingRight="7dp"
-                    android:text="@string/gender"
-                    android:textColor="#ffffff"
-                    android:textSize="8pt" />
-
-                <RadioGroup
-                    android:id="@+id/radio_group1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-                        android:id="@+id/radio_male"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:checked="true"
-                        android:onClick="onRadioButtonClicked"
-                        android:text="male"
-                        android:textColor="#ffffff"
-                        android:textSize="8pt" />
-
-                    <RadioButton
-                        android:id="@+id/radio_female"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:onClick="onRadioButtonClicked"
-                        android:text="female"
-                        android:textColor="#ffffff"
-                        android:textSize="8pt" />
-                </RadioGroup>
-
-            </LinearLayout>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/signup"
                 android:layout_width="300dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="40dp"
                 android:background="@drawable/box1"
-                android:onClick="popme"
+                android:onClick="registerDetails"
                 android:text="@string/saveDetails"
                 android:textColor="@color/black" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btn_link_login"
-                android:layout_width="170dp"
-                android:layout_height="35dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/round52"
-                android:onClick="logMeIn"
-                android:text="Login link"
-                android:textColor="#ffffff" />
 
 
         </LinearLayout>
@@ -190,7 +132,7 @@
         android:id="@+id/pogbaed"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_gravity="center"
+        android:layout_centerInParent="true"
         android:indeterminate="true"
         android:visibility="invisible"
         app:cpb_color="#FFee44"
@@ -199,13 +141,7 @@
         app:cpb_min_sweep_angle="10"
         app:cpb_rotation_speed="1.0"
         app:cpb_stroke_width="5dp"
-        app:cpb_sweep_speed="1.0"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.72" />
+        app:cpb_sweep_speed="1.0" />
 
 
-</LinearLayout>
+</RelativeLayout>

@@ -33,7 +33,11 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthOptions;
 import com.google.firebase.auth.PhoneAuthProvider;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
@@ -72,6 +76,7 @@ public class login extends AppCompatActivity {
     private Interpolator mCurrentInterpolator;
     String phone;
 
+    private DocumentReference dbref;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -99,9 +104,6 @@ public class login extends AppCompatActivity {
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
-
                 // initializing variables for button and Edittext.
                 edtOTP = veryDialog.findViewById(R.id.idEdtOtp1);
                 verifyOTPBtn = veryDialog.findViewById(R.id.verify1);
@@ -117,11 +119,29 @@ public class login extends AppCompatActivity {
                     return;
                 }else {
                     if (plen==9) {
-                        String phonesend = "+256" + phone;
-                        sendVerificationCode(phonesend);
-                        veryDialog.setCancelable(true);
-                        veryDialog.show();
+                        //check if in database
+                        dbref= db.document("mukusers/"+"0"+phone);
+                        dbref.addSnapshotListener(login.this, new EventListener<DocumentSnapshot>() {
+                            @Override
+                            public void onEvent(DocumentSnapshot documentSnapshot, FirebaseFirestoreException e) {
+                                Log.i("lllll",phone+"exists");
+                                if (e != null) {
+                                    Toast.makeText(login.this, "Error while loading!", Toast.LENGTH_SHORT).show();
+                                    return;
+                                }
+                                if (documentSnapshot.exists()) {
+                                    Log.i("lllll",phone+"exists");
+                                    Toast.makeText(login.this, phone+" exist ", Toast.LENGTH_SHORT).show();
 
+                                    String phonesend = "+256" + phone;
+                                    sendVerificationCode(phonesend);
+                                    veryDialog.setCancelable(true);
+                                    veryDialog.show();
+                                }else {
+                                    Toast.makeText(login.this, "0"+phone+" doesn't exist please register", Toast.LENGTH_SHORT).show();
+                                }
+                            }
+                        });
 
                     } else {
                         Toast.makeText(getApplicationContext(), "Check length of your phone number", Toast.LENGTH_LONG).show();

@@ -42,15 +42,6 @@
                 android:hint="Enter OTP"
                 android:importantForAutofill="no"
                 android:inputType="phone" />
-            <!--button for verifying user OTP-->
-            <Button
-                android:id="@+id/verify"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/idEdtOtp"
-                android:layout_margin="10dp"
-                android:text="Verify OTP"
-                android:textAllCaps="false" />
 
             <fr.castorflex.android.smoothprogressbar.SmoothProgressBar
                 android:id="@+id/pogback55"
@@ -79,14 +70,16 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/signup"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="10dp"
                 android:textColor="@color/white"
                 android:onClick="regMe"
+                android:textAllCaps="false"
                 android:layout_marginVertical="4dp"
                 android:background="@drawable/roundlogbtn"
                 android:layout_gravity="center_horizontal"
-                android:text="@string/signup"/>
+                android:text="@string/signupsmall"/>
         </LinearLayout>
     </ScrollView>
 

@@ -3,10 +3,6 @@ package com.quizinfinity.digitalbikes;
 import static com.quizinfinity.digitalbikes.mymethods.decodeBase64;
 import static com.quizinfinity.digitalbikes.mymethods.encodeTobase64;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -23,11 +19,18 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
-import android.widget.ImageView;
-import android.widget.ProgressBar;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
+import com.flutterwave.raveandroid.RavePayActivity;
+import com.flutterwave.raveandroid.RaveUiManager;
+import com.flutterwave.raveandroid.rave_java_commons.RaveConstants;
+import com.flutterwave.raveandroid.rave_presentation.RavePayManager;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -45,6 +48,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.TimeZone;
+import java.util.UUID;
 
 public class profile extends AppCompatActivity {
 
@@ -53,11 +57,8 @@ public class profile extends AppCompatActivity {
     private FirebaseAuth mAuth;
     String pfname, psname,pemail, pphone, pdt,presidence;
     TextView tname,temail,tphone,tdt,tresidence;
-
     private CircularImageView imageView,nid;
-
     private Uri filePath;
-
     private final int PICK_IMAGE_REQUEST = 71;//Firebase
     FirebaseStorage storage;
     StorageReference storageReference;
@@ -66,20 +67,11 @@ public class profile extends AppCompatActivity {
     EditText esname,efname,ephone,eemail,epassword,eresi,esharecode;
     String nsname, nfname, nphone, nemail, npsword, nresid;
     private FirebaseFirestore db =FirebaseFirestore.getInstance();
-
     Button btnOne, btnTwo;
-    final int amount_1 = 500;
-    final int amount_2 = 500;
-    String fName = "Samuel";
-    String lName = "Mugabi";
-    String narration = "payment for food";
-    String txRef;
-    String country = "UG";
-    String currency = "UGX";
-
-    final String publicKey = "FLWPUBK-a06274ca7488cff341ae54f21883600f-X"; //Get your public key from your account
-    final String encryptionKey = "300c56c4cc3cf1290af704c9"; //Get your encryption key from your account
-    Button dtpop,dtbuy;
+    final int pricehourglass = 1000;
+    final int pricetimebucket = 10000;
+    Button dtbuy;
+    LinearLayout dtpop;
     FrameLayout fhourglass,ftimebucket;
 
     @Override
@@ -104,6 +96,41 @@ public class profile extends AppCompatActivity {
         dialogdtpop.setContentView(R.layout.digital_time);
         fhourglass= dialogdtpop.findViewById(R.id.hourglass);
         ftimebucket= dialogdtpop.findViewById(R.id.timebucket);
+
+//        SharedPreferences.Editor editor = sharedPreferences.edit();
+//        editor.putString("firstname", "John");
+//        editor.putString("surname", "Museveni");
+//        editor.putString("phone_number", "0774645196");
+//        editor.putString("email", "samuel@chocolatecosmosweb.com");
+//        editor.putString("digital_time", "20");
+//        editor.putString("residence", "katende");
+//        editor.apply();
+
+        dtpop=findViewById(R.id.digitaltime);
+        dtpop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialogdtpop.show();
+            }
+        });
+
+        fhourglass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(profile.this,flutterwave.class);
+                intent.putExtra("amount",500);
+                startActivity(intent);
+            }
+        });
+
+        ftimebucket.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(profile.this,flutterwave.class);
+                intent.putExtra("amount",pricetimebucket);
+                startActivity(intent);
+            }
+        });
 
         imageView=findViewById(R.id.profilephoto);
         pfname=sharedPreferences.getString("firstname","");
@@ -189,7 +216,6 @@ public class profile extends AppCompatActivity {
             filePath = data.getData();
             try {
                 Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), filePath);
-                Log.i("%%%", bitmap.toString());
                 imageView.setImageBitmap(bitmap);
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 editor.putString("profile_picture", encodeTobase64(bitmap));
@@ -201,7 +227,9 @@ public class profile extends AppCompatActivity {
                 e.printStackTrace();
             }
         }
+
     }
+
     public void uploadImage() {
 
 //        if(filePath != null)
@@ -302,4 +330,5 @@ public class profile extends AppCompatActivity {
         Date today = Calendar.getInstance().getTime();
         return dateFormat.format(today);
     }
+
 }

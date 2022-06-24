@@ -60,13 +60,20 @@
                     android:textColor="@color/white"
                     android:textSize="20sp" />
 
+<!--                <com.airbnb.lottie.LottieAnimationView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="130dp"-->
+<!--                    android:layout_marginTop="24dp"-->
+<!--                    app:lottie_autoPlay="true"-->
+<!--                    app:lottie_loop="true"-->
+<!--                    app:lottie_fileName="lf30_editor_PNrU0S.json" />-->
                 <com.airbnb.lottie.LottieAnimationView
                     android:layout_width="match_parent"
                     android:layout_height="130dp"
                     android:layout_marginTop="24dp"
                     app:lottie_autoPlay="true"
                     app:lottie_loop="true"
-                    app:lottie_fileName="lf30_editor_PNrU0S.json" />
+                    app:lottie_fileName="lf30_editor_3JP9uC.json" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -98,13 +105,20 @@
                     android:text="@string/timebucket"
                     android:textColor="@color/white"
                     android:textSize="20sp" />
+<!--                <com.airbnb.lottie.LottieAnimationView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="130dp"-->
+<!--                    android:layout_marginTop="24dp"-->
+<!--                    app:lottie_autoPlay="true"-->
+<!--                    app:lottie_loop="true"-->
+<!--                    app:lottie_fileName="lf30_editor_8puxpE.json" />-->
                 <com.airbnb.lottie.LottieAnimationView
                     android:layout_width="match_parent"
                     android:layout_height="130dp"
                     android:layout_marginTop="24dp"
                     app:lottie_autoPlay="true"
                     app:lottie_loop="true"
-                    app:lottie_fileName="lf30_editor_8puxpE.json" />
+                    app:lottie_fileName="lf30_editor_3JP9uC.json" />
 
                 <TextView
                     android:layout_width="match_parent"

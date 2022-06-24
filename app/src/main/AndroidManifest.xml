@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.quizinfinity.digitalbikes">
-
+    package="com.quizinfinity.digitalbikes" >
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
          location permissions for the "MyLocation" functionality.
     -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.DigitalBikes">
-
+        android:theme="@style/Theme.DigitalBikes" >
+        <activity
+            android:name=".flutterwave"
+            android:exported="false" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -25,82 +29,81 @@
         -->
         <activity
             android:name=".maps"
-            android:screenOrientation="portrait"
-            android:exported="true" >
+            android:exported="true"
+            android:screenOrientation="portrait" >
         </activity>
-
         <activity
             android:name=".intro"
-            android:screenOrientation="portrait"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".support"
-            android:screenOrientation="portrait"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".otp"
-            android:screenOrientation="portrait"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".safetyTips"
-            android:screenOrientation="portrait"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".bikeReturn"
-            android:screenOrientation="portrait"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".registration"
-            android:screenOrientation="portrait"
-            android:exported="true" >
+            android:exported="true"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".profile"
-            android:screenOrientation="portrait"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".passwordRecovery"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".instructions"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".frozenAccount"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fine"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".finalRegistration"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".splash"
+            android:exported="true"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".passwordRecovery"
-            android:screenOrientation="portrait"
-            android:exported="true" />
-        <activity
-            android:name=".instructions"
-            android:screenOrientation="portrait"
-            android:exported="true" />
-        <activity
-            android:name=".frozenAccount"
-            android:screenOrientation="portrait"
-            android:exported="true" />
-        <activity
-            android:name=".fine"
-            android:screenOrientation="portrait"
-            android:exported="true" />
-        <activity
-            android:name=".finalRegistration"
-            android:screenOrientation="portrait"
-            android:exported="true" />
-        <activity
-            android:name=".login"
-            android:screenOrientation="portrait"
-            android:exported="true" ></activity>
-        <activity
-            android:name=".splash"
-            android:screenOrientation="portrait"
-            android:exported="true">
-        </activity>
-        <activity
             android:name=".MainActivity"
-            android:screenOrientation="portrait"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
     </application>
-
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
 </manifest>

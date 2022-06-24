@@ -3,11 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/androidlenovo/Digital-Bikes-Official/app/src/main/res/layout/activity_flutterwave.xml" value="0.23229166666666667" />
         <entry key="..\:/androidlenovo/Digital-Bikes-Official/app/src/main/res/layout/activity_login.xml" value="0.23229166666666667" />
         <entry key="..\:/androidlenovo/Digital-Bikes-Official/app/src/main/res/layout/activity_maps.xml" value="0.11296859169199595" />
         <entry key="..\:/androidlenovo/Digital-Bikes-Official/app/src/main/res/layout/activity_profile.xml" value="0.23229166666666667" />
         <entry key="..\:/androidlenovo/Digital-Bikes-Official/app/src/main/res/layout/activity_registration.xml" value="0.23229166666666667" />
         <entry key="..\:/androidlenovo/Digital-Bikes-Official/app/src/main/res/layout/activity_support.xml" value="0.1" />
+        <entry key="..\:/androidlenovo/Digital-Bikes-Official/app/src/main/res/layout/digital_time.xml" value="0.23229166666666667" />
         <entry key="..\:/androidlenovo/Digital-Bikes-Official/app/src/main/res/layout/edit_details.xml" value="0.23125" />
         <entry key="..\:/androidlenovo/Digital-Bikes-Official/app/src/main/res/layout/rent_bike_popup.xml" value="0.23229166666666667" />
         <entry key="..\:/androidlenovo/Digital-Bikes-Official/app/src/main/res/layout/step1.xml" value="0.23229166666666667" />
@@ -15,6 +17,8 @@
         <entry key="..\:/androidlenovo/Digital-Bikes-Official/app/src/main/res/layout/verifylogin.xml" value="0.23125" />
         <entry key="..\:/androidlenovo/Digital-Bikes-Official/app/src/main/res/layout/verily.xml" value="0.23125" />
         <entry key="..\:/androidlenovo/Digital-Bikes-Official/app/src/main/res/menu/fresh_menu.xml" value="0.22314814814814815" />
+        <entry key="..\:/androidlenovo/Digital-Bikes-Official/app/src/main/res/menu/menu.xml" value="0.23229166666666667" />
+        <entry key="..\:/androidlenovo/Digital-Bikes-Official/app/src/main/res/menu/menu_tabbed.xml" value="0.23229166666666667" />
         <entry key="..\:/androidlenovo/Digital-Bikes-Official/app/src/main/res/menu/user_menu.xml" value="0.22314814814814815" />
         <entry key="..\:/lockdown/DigitalBikes/app/src/main/res/drawable/blue_image.xml" value="0.2169230769230769" />
         <entry key="..\:/lockdown/DigitalBikes/app/src/main/res/drawable/box1.xml" value="0.2169230769230769" />

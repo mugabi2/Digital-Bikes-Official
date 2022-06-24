@@ -61,8 +61,8 @@ import java.util.Map;
 
 import static com.quizinfinity.digitalbikes.registration.getCurrentDate;
 
-public class maps extends  AppCompatActivity implements OnMapReadyCallback, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener,
-        LocationListener, GoogleMap.InfoWindowAdapter, GoogleMap.OnInfoWindowClickListener{
+public class maps extends  AppCompatActivity implements OnMapReadyCallback, GoogleApiClient.ConnectionCallbacks,
+        GoogleApiClient.OnConnectionFailedListener, LocationListener, GoogleMap.InfoWindowAdapter, GoogleMap.OnInfoWindowClickListener{
 
         private GoogleMap mMap;
         LatLng zooom;
@@ -76,16 +76,14 @@ public class maps extends  AppCompatActivity implements OnMapReadyCallback, Goog
     private ActivityMapsBinding binding;
 
     Dialog myDialog, updialog,ratdialog;
-    String usname, ufname, uphone, umail, uresi, udura = "20", upaymeth, uagcode,prx="0",ditime,duration;
+    String usname, ufname, uphone, umail, uresi, udura = "20", upaymeth, uagcode,ustation,ustationcode,prx="0",ditime,duration;
     TextView durationtext;
     SeekBar seekduration;
     int min = 0, max = 5, current = 0;
-    String paymentInt="1";
+    String paymentInt="cash";
     int checkPm = 0, pmi, pmc = 1, pmd = -1, suckind, succfour, sucki;
 
-
 //    BOTTOM SHEET PRICE
-
     String ExternalFontPath;
     Typeface FontLoaderTypeface;
     BottomSheetBehavior mBottomSheetBehavior,mbottomSheetBehavior1;
@@ -105,7 +103,7 @@ public class maps extends  AppCompatActivity implements OnMapReadyCallback, Goog
         setSupportActionBar(toolbar);
 
         Bundle extras=getIntent().getExtras();
-//        rent=extras.getString("rent");
+//        rent=extras.getString("has_rented");
 
         myDialog = new Dialog(this);
         myDialog.setContentView(R.layout.rent_bike_popup);//rent_bike_popup
@@ -116,6 +114,8 @@ public class maps extends  AppCompatActivity implements OnMapReadyCallback, Goog
         ufname=sharedPreferences.getString("firstname","");
         uphone=sharedPreferences.getString("phone_number","");
         uresi=sharedPreferences.getString("residence","");
+        ditime=sharedPreferences.getString("digital_time","");
+
 
         dbref.addSnapshotListener(maps.this, new EventListener<DocumentSnapshot>() {
             @Override
@@ -143,7 +143,7 @@ public class maps extends  AppCompatActivity implements OnMapReadyCallback, Goog
             }
         });
 
-        DocumentReference dbrent = db.document("mukusers/"+umail);
+        DocumentReference dbrent = db.document("mukusers/"+uphone);
         dbrent.addSnapshotListener(maps.this, new EventListener<DocumentSnapshot>() {
             @Override
             public void onEvent(DocumentSnapshot documentSnapshot, FirebaseFirestoreException e) {
@@ -152,8 +152,8 @@ public class maps extends  AppCompatActivity implements OnMapReadyCallback, Goog
                     return;
                 }
                 if (documentSnapshot.exists()) {
-                    rentfresh = documentSnapshot.getString("rent");
-                    if(rentfresh.equals("1")){
+                    rentfresh = documentSnapshot.getString("has_rented");
+                    if(rentfresh.equals("yes")){
                         pkafrica= pkcedat= pkcomplex= pkfema= pklibrary= pklivingstone= pklumumba= pkmaingate
                                 =pkmarystuart= pkmitchell= pknkrumah= pkuh="Return Bike";
                         Log.i("11111f", pkafrica);
@@ -251,7 +251,7 @@ public class maps extends  AppCompatActivity implements OnMapReadyCallback, Goog
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         MenuInflater inflater=getMenuInflater();
-        inflater.inflate(R.menu.fresh_menu, menu);
+        inflater.inflate(R.menu.menu, menu);
         return true;
     }
     @Override
@@ -445,58 +445,70 @@ public class maps extends  AppCompatActivity implements OnMapReadyCallback, Goog
                         }else {
                             availableBikes=1;
                         }
-                        uagcode="1";
+                        ustation="Africa";
+                        ustationcode="1";
                         break;
                     case "CEDAT":
                         if (pkcedat.equals("0")){}else if (pkcedat.equals("Return Bike")){availableBikes=2;}else {availableBikes=1;}
-                        uagcode="2";
+                        ustation="CEDAT";
+                        ustationcode="2";
                         break;
                     case "Complex":
                         if (pkcomplex.equals("0")){}else if (pkcomplex.equals("Return Bike")){availableBikes=2;}else {availableBikes=1;}
-                        uagcode="3";
+                        ustation="Complex";
+                        ustationcode="3";
                         break;
                     case "FEMA":
                         if (pkfema.equals("0")){}else if (pkfema.equals("Return Bike")){availableBikes=2;}else {availableBikes=1;}
-                        uagcode="4";
+                        ustation="FEMA";
+                        ustationcode="4";
                         break;
                     case "Library":
                         if (pklibrary.equals("0")){}else if (pklibrary.equals("Return Bike")){availableBikes=2;}else {availableBikes=1;}
-                        uagcode="5";
+                        ustation="Library";
+                        ustationcode="5";
                         break;
                     case "Livingstone":
                         if (pklivingstone.equals("0")){}else if (pklivingstone.equals("Return Bike")){availableBikes=2;}else {availableBikes=1;}
-                        uagcode="6";
+                        ustation="Livingstone";
+                        ustationcode="6";
                         break;
                     case "Lumumba":
                         if (pklumumba.equals("0")){}else if (pklumumba.equals("Return Bike")){availableBikes=2;}else {availableBikes=1;}
-                        uagcode="7";
+                        ustation="Lumumba";
+                        ustationcode="7";
                         break;
                     case "Main Gate":
                         if (pkmaingate.equals("0")){}else if (pkmaingate.equals("Return Bike")){availableBikes=2;}else {availableBikes=1;}
-                        uagcode="8";
+                        ustation="Main Gate";
+                        ustationcode="8";
                         break;
                     case "Marystuart":
                         if (pkmarystuart.equals("0")){}else if (pkmarystuart.equals("Return Bike")){availableBikes=2;}else {availableBikes=1;}
-                        uagcode="9";
+                        ustation="Marystuart";
+                        ustationcode="9";
                         break;
                     case "Mitchell":
                         if (pkmitchell.equals("0")){}else if (pkmitchell.equals("Return Bike")){availableBikes=2;}else {availableBikes=1;}
-                        uagcode="10";
+                        ustation="Mitchell";
+                        ustationcode="10";
                         break;
                     case "Nkrumah":
                         if (pknkrumah.equals("0")){}else if (pknkrumah.equals("Return Bike")){availableBikes=2;}else {availableBikes=1;}
-                        uagcode="11";
+                        ustation="Nkrumah";
+                        ustationcode="11";
                         break;
                     case "University Hall":
                         if (pkuh.equals("0")){}else if (pkuh.equals("Return Bike")){availableBikes=2;}else {availableBikes=1;}
-                        uagcode="12";
+                        ustation="University Hall";
+                        ustationcode="12";
                         break;
                 }
 
                 if(availableBikes==1) {
                     showPopup();
                 }else if(availableBikes==2){
-//                    REQUESZT BIKE RETURN
+//-REQUEST BIKE RETURN
                     Toast.makeText(getApplicationContext(), "Requesting Agent", Toast.LENGTH_LONG).show();
 //                    returnBike(uagcode);
 
@@ -508,14 +520,15 @@ public class maps extends  AppCompatActivity implements OnMapReadyCallback, Goog
                     dataFour.put("surname", usname);
                     dataFour.put("firstname", ufname);
                     dataFour.put("residence", uresi);
-                    dataFour.put("agent", uagcode);
+                    dataFour.put("station", ustation);
+                    dataFour.put("digital_time", ditime);
 
-                    db.collection("mukreturnrequests").document(umail)
+                    db.collection("mukreturnrequests").document(uphone)
                             .set(dataFour)
                             .addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void aVoid) {
-                                    Log.d("luanda", "DocumentSnapshot successfully written!");
+                                    Log.d("luanda", "Document successfully written!");
                                 }
                             })
                             .addOnFailureListener(new OnFailureListener() {
@@ -525,26 +538,47 @@ public class maps extends  AppCompatActivity implements OnMapReadyCallback, Goog
                                 }
                             });
 
-                    new Handler().postDelayed(new Runnable() {
+                    db.collection("mukreturnrequests").document(uphone)
+                            .addSnapshotListener(maps.this, new EventListener<DocumentSnapshot>() {
                         @Override
-                        public void run() {
-//                db.collection("mukreturnrequests").document(umail)
-//                        .delete()
-//                        .addOnSuccessListener(new OnSuccessListener<Void>() {
-//                            @Override
-//                            public void onSuccess(Void aVoid) {
-                                Toast.makeText(getApplicationContext(), "No response, please try again", Toast.LENGTH_SHORT).show();
-//                            }
-//                        })
-//                        .addOnFailureListener(new OnFailureListener() {
-//                            @Override
-//                            public void onFailure(@NonNull Exception e) {
-//
-//                            }
-//                        });
+                        public void onEvent(DocumentSnapshot documentSnapshot, FirebaseFirestoreException e) {
+                            if (e != null) {
+                                Toast.makeText(maps.this, "Error while loading!", Toast.LENGTH_SHORT).show();
+                                return;
+                            }
+                            if (documentSnapshot.exists()) {
+                                String yes="yes";
+                                if(yes.equals(documentSnapshot.getString("has_rented"))){
+                                Toast.makeText(maps.this, "bike returned thank you", Toast.LENGTH_SHORT).show();
 
+                                    Intent int111=new Intent(maps.this,maps.class);
+//        int111.putExtra("bikesin",ups);
+                                    startActivity(int111);
+                            }
+                            }
                         }
-                    }, 20000);
+                    });
+//                    new Handler().postDelayed(new Runnable() {
+//                        @Override
+//                        public void run() {
+////                db.collection("mukreturnrequests").document(umail)
+////                        .delete()
+////                        .addOnSuccessListener(new OnSuccessListener<Void>() {
+////                            @Override
+////                            public void onSuccess(Void aVoid) {
+//                                Toast.makeText(getApplicationContext(), "No response, please try again", Toast.LENGTH_SHORT).show();
+////                            }
+////                        })
+////                        .addOnFailureListener(new OnFailureListener() {
+////                            @Override
+////                            public void onFailure(@NonNull Exception e) {
+////
+////                            }
+////                        });
+//
+//                        }
+//                    }, 20000);
+
                 }else {
                     Toast.makeText(getApplicationContext(), "no bikes available at "+selected, Toast.LENGTH_SHORT).show();}
             }
@@ -672,7 +706,7 @@ public class maps extends  AppCompatActivity implements OnMapReadyCallback, Goog
         myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
         RadioButton radi=(RadioButton)myDialog.findViewById(R.id.radio_digitime12);
-        radi.setText("Digital Time("+ditime+")");
+        radi.setText("Digital Time("+ditime+" mins)");
 
         durationtext =(TextView)myDialog.findViewById(R.id.duration1);
         seekduration =(SeekBar)myDialog.findViewById(R.id.seekbar1);
@@ -810,22 +844,22 @@ public class maps extends  AppCompatActivity implements OnMapReadyCallback, Goog
         dataOne.put("duration", timestring);
         dataOne.put("payment_method", paymentInt);
         dataOne.put("email", umail);
-        dataOne.put("cash", money);
+        dataOne.put("amount", money);
         dataOne.put("surname", usname);
         dataOne.put("firstname", ufname);
         dataOne.put("residence", uresi);
-        dataOne.put("agent", uagcode);
+        dataOne.put("station", ustation);
+        dataOne.put("digital_time", ditime);
 
         if (pmc==0) {
             //REQUEST DIGITAL TIME FROME HERE
-            if(ditime.equals("00:00")&& pmc>0){
+            if(ditime.equals("0")&& pmc>0){
                 Toast.makeText(getApplicationContext(), "You do not have digital time to spend", Toast.LENGTH_SHORT).show();
             }else{
-//                new backgroundrequest(Mapsimport1.this).execute(usname, ufname, uphone, umail, uresi, udura, paymentInt, uagcode);
                 Toast.makeText(getApplicationContext(), "requesting.......", Toast.LENGTH_LONG).show();
                 Log.d("JSONStatus", "requestING");
 
-                db.collection("mukcurrentrequests").document(umail)
+                db.collection("mukcurrentrequests").document(uphone)
                         .set(dataOne)
                         .addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
@@ -841,7 +875,7 @@ public class maps extends  AppCompatActivity implements OnMapReadyCallback, Goog
                         });
             }
         }else if (pmc>0){
-            db.collection("mukcurrentrequests").document(umail)
+            db.collection("mukcurrentrequests").document(uphone)
                     .set(dataOne)
                     .addOnSuccessListener(new OnSuccessListener<Void>() {
                         @Override
@@ -889,7 +923,7 @@ public class maps extends  AppCompatActivity implements OnMapReadyCallback, Goog
             case R.id.radio_cash12:
                 if (checked){
 //                    payment="cash";
-                    paymentInt="1";
+                    paymentInt="cash";
                     checkPm++;
                     pmc++;
                     pmd=0;
@@ -899,7 +933,7 @@ public class maps extends  AppCompatActivity implements OnMapReadyCallback, Goog
             case R.id.radio_digitime12:
                 if (checked){
 //                    payment="DT";
-                    paymentInt="2";
+                    paymentInt="DT";
                     checkPm++;
                     pmd++;
                     pmc=0;

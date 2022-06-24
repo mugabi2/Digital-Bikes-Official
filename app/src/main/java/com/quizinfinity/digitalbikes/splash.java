@@ -53,14 +53,14 @@ public class splash extends AppCompatActivity {
                                 public void onComplete(@NonNull Task<QuerySnapshot> task) {
                                     if (task.isSuccessful()) {
                                         for (QueryDocumentSnapshot document : task.getResult()) {
-                                            rent=document.getString("rent");
+                                            rent=document.getString("has_rented");
                                         }
 //                            firestoreCallback.onCallback(requestArray);
                                     } else {
                                         Log.d("milan", "Error getting documents: ", task.getException());
                                     }
                                     Intent intent=new Intent(splash.this,maps.class);
-                                    intent.putExtra("rent",rent);
+                                    intent.putExtra("has_rented",rent);
                                     startActivity(intent);
                                     finish();
                                 }
